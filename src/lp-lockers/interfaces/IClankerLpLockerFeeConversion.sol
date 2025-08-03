@@ -31,4 +31,6 @@ interface IClankerLpLockerFeeConversion is IClankerLpLockerMultiple {
     );
 
     event InitialFeePreferences(address indexed token, FeeIn[] feePreference);
+
+    function feePreferences(address token, uint256 index) external view returns (FeeIn);
 }
